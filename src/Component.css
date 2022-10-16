@@ -34,10 +34,6 @@ button{
 	width: 10rem;
 	font-size: 1rem ;
 	font-weight: bold;
-	background-color: #fae3bb;
-	border: 0.3rem solid #c98474;
-	box-shadow: 0 0.3rem 1.5rem #c98474;
-	color: #c98474;
 	border-radius: 0.8rem 0 0.8rem 0;
 }
 
@@ -51,6 +47,20 @@ button:hover{
 	color: #036383;
 	border-radius: 0.8rem 0 0.8rem 0;
 	transform: scale(1.07) ;
+}
+
+.btnUnfollow{
+	background-color: #fae3bb;
+	border: 0.3rem solid #c98474;
+	box-shadow: 0 0.3rem 1.5rem #c98474;
+	color: #c98474;
+}
+
+.btnFollow{
+	background-color: #F1948A;
+	border: 0.3rem solid #E74C3C;
+	box-shadow: 0 0.3rem 1.5rem #E74C3C;
+	color: #E74C3C;
 }
 
 .Button{

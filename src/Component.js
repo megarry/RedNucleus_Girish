@@ -30,7 +30,7 @@ useEffect(()=> {
 			</div>
 			<div className = "Text">
 				<div className="Button">
-					<button onClick = {() =>setFollow(!follow)} > {follow ? "Unfollow" : "Follow"} </button>
+					<button className={follow ? "btnFollow" : "btnUnfollow"} onClick = {() =>setFollow(!follow)} > {follow ? "Unfollow" : "Follow"} </button>
 				</div>
 				<div className = "Text-Title">
 					Space Ship
