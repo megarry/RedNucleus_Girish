@@ -9,7 +9,8 @@ html{
 }
 
 .Card{
-	margin: 3.0rem;
+	margin: auto; 
+	margin-top: 5%;
 	width: fit-content;
 	height: auto;
 	display: flex;
@@ -92,12 +93,12 @@ div.HeaderImg > img{
 
 @media(max-width:998px){
 	html{
-		font-size: 75%;
+		font-size: 85%;
 	}
 }
 
 @media(max-width: 768px){
 	html{
-		font-size: 65%;
+		font-size: 75%;
 	}
 }
