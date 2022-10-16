@@ -9,6 +9,15 @@
 
 .HeaderImg{
 	height: 55%;
+	background-image: url("./nasa.jpg");
+	
+}
+
+div#HeaderImg input{
+	display : "flex";
+	padding-top: 30px;
+    align-items : "flex-end";
+    justify-content : "center";
 }
 
 .Text-Title{

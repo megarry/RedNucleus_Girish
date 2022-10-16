@@ -1,11 +1,11 @@
-import logo from './nasa.jpg';
+import profile from './man.png';
 import './Component.css';
 
 function Component() {
   return (
 		<div className = "Card">
 			<div className = "HeaderImg">
-				<img className="Image" src={logo} alt="Space"/>
+				<img src = {profile} alt="Profile" />
 			</div>
 			<div className = "Text">
 				<div className = "Text-Title">
