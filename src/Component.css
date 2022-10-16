@@ -1,42 +1,41 @@
-/* *{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-} */
-
-html{
+/* To set default size of fonts 100% */
+html {
 	font-size: 100%;
 }
 
-.Card{
-	margin: auto; 
+/* Whole card as a component css properties */
+.card {
+	margin: auto;
 	margin-top: 5%;
 	width: fit-content;
 	display: flex;
 	flex-direction: column;
-	box-shadow: 0 0 2.0rem .5rem;
-	border-radius: 1.0rem;
+	box-shadow: 0 0 2rem 0.5rem;
+	border-radius: 1rem;
 }
- 
-.HeaderImg{
+
+/* Properties of Div for header image. flex-direction row makes the headerImg and text divs flex in rows(one on top of another */
+.headerImg {
 	min-height: 250px;
 	border-radius: 1rem 1rem 0 0;
 	background-image: url("./nasa.jpg");
-	display : flex;
+	display: flex;
 	flex-direction: row;
-	align-items : flex-end;
-    justify-content : left;
+	align-items: flex-end;
+	justify-content: left;
 }
 
-button{
+/* properties for follow button */
+button {
 	padding: 0.3rem 2rem;
 	width: 10rem;
-	font-size: 1rem ;
+	font-size: 1rem;
 	font-weight: bold;
 	border-radius: 0.8rem 0 0.8rem 0;
 }
 
-button:hover{
+/* properties of button when hovered */
+button:hover {
 	padding: 0.3rem 2rem;
 	width: 10rem;
 	font-weight: bold;
@@ -45,45 +44,51 @@ button:hover{
 	box-shadow: 0 0.3rem 1.5rem #037398;
 	color: #036383;
 	border-radius: 0.8rem 0 0.8rem 0;
-	transform: scale(1.07) ;
+	transform: scale(1.07);
 }
 
-.btnUnfollow{
+/* properties of button when in unfollowed state */
+.btnUnfollow {
 	background-color: #fae3bb;
 	border: 0.3rem solid #c98474;
 	box-shadow: 0 0.3rem 1.5rem #c98474;
 	color: #c98474;
 }
 
-.btnFollow{
-	background-color: #F1948A;
-	border: 0.3rem solid #E74C3C;
-	box-shadow: 0 0.3rem 1.5rem #E74C3C;
-	color: #E74C3C;
+/* properties of button when in followed state */
+.btnFollow {
+	background-color: #f1948a;
+	border: 0.3rem solid #e74c3c;
+	box-shadow: 0 0.3rem 1.5rem #e74c3c;
+	color: #e74c3c;
 }
 
-.Button{
+/* properties of button div */
+.button {
 	height: 4rem;
 }
 
-div.HeaderImg > img{
+/* properties of img div which is child of headerImg div in div tag. translateY makes it go down a little by 50% */
+div.headerImg > img {
 	height: 27%;
 	width: 27%;
-	transform : translateY(50%);
+	transform: translateY(50%);
 }
 
-.Text-Title{
+/* properties of textTitle div */
+.textTitle {
 	font-size: 2rem;
 	font-weight: 500;
 	align-self: start;
 }
 
-
-.Image{
+/* properties of image div. Padding kept 2 to keep the DP slighly away from left border */
+.image {
 	padding-left: 2rem;
 }
 
-.Text{
+/* properties of text div. align-items kept flex-end to keep the follow button on the right side */
+.text {
 	padding: 3rem;
 	display: flex;
 	font-size: 1rem;
@@ -92,30 +97,31 @@ div.HeaderImg > img{
 	align-self: start;
 }
 
-.Footer{
-	text-justify: auto;
+/* properties of footer text*/
+.footer {
 	font-size: 0.9rem;
 	font-weight: 400;
 }
 
+/* To make the color of hashtags blue */
 .blue {
-	color: blue
-  }
+	color: blue;
+}
 
-@media(max-width:998px){
-	html{
+@media (max-width: 998px) {
+	html {
 		font-size: 85%;
 	}
 }
 
-@media(max-width: 768px){
-	html{
+@media (max-width: 768px) {
+	html {
 		font-size: 75%;
 	}
 }
 
-@media screen and (max-width: 500px){
-	.Card{
+@media screen and (max-width: 500px) {
+	.Card {
 		margin: 1.5rem;
 	}
-	}
+}
