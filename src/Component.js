@@ -5,7 +5,7 @@ function Component() {
   return (
 		<div className = "Card">
 			<div className = "HeaderImg">
-				<img src = {profile} alt="Profile" />
+				<img className="Image" src = {profile} alt="Profile" />
 			</div>
 			<div className = "Text">
 				<div className = "Text-Title">
