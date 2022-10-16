@@ -1,7 +1,6 @@
 import profile from './man.png';
 import './Component.css';
 import { useEffect, useState } from 'react';
-import $ from 'jquery';
 
 function Component() {
 
