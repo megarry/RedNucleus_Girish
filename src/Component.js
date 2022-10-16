@@ -1,17 +1,27 @@
 import profile from './man.png';
 import './Component.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import $ from 'jquery';
 
 function Component() {
 
 	const [follow, setFollow] = useState(false);
 
-	$(document).ready(function() {
-		$("p").html(function(_, html) {
-		  return html.replace(/(\#\w+)/g, '<span class="blue">$1</span>');
-		});
-	  });
+	// $(document).ready(function() {
+	// 	$("p").html((_, html) => {
+	// 	  return html.replace(/(\#\w+)/g, '<span class="blue">$1</span>');
+	// 	});
+	//   });
+
+const changeText = () =>{
+	let str = document.getElementById("demo").innerHTML; 
+	let res = str.replace(/(\#\w+)/g, '<span class="blue">$1</span>');
+	document.getElementById("demo").innerHTML = res;
+}
+
+useEffect(()=> {
+	changeText()
+},[])
 
   return (
 		<div className = "Card">
@@ -26,15 +36,12 @@ function Component() {
 					Space Ship
 				</div>
 				<div className = "Text-Content">
-					<p>Translating Ideas to Reality - #React, #JAVASCRIPT, #CSS, and #UXDesign</p>
+					<p id='demo'>Translating Ideas to Reality - #React, #JAVASCRIPT, #CSS, and #UXDesign</p>
 				<div className='Footer'>
 					<p>North America & Europe &#x2022; hanservices.com &#x2022; Joined March 2009 </p>
 				</div>
-					
 				</div>
-			
 			</div>
-
 		</div>
   );
 }

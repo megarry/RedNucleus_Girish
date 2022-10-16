@@ -1,4 +1,3 @@
-import logo from './nasa.jpg';
 import './App.css';
 import Component from './Component';
 
