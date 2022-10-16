@@ -1,20 +1,40 @@
+/* *{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+} */
 
 .Card{
+	margin: 30px;
 	height: auto;
 	width: 40vw;
-	border: 2px solid black;
 	display: flex;
 	flex-direction: column;
+	box-shadow: 0 0 20px 5px;
+	border-radius: 10px;
 }
-
+ 
 .HeaderImg{
 	min-height: 250px;
+	border-radius: 10px 10px 0 0;
 	background-image: url("./nasa.jpg");
 	display : flex;
 	flex-direction: row;
 	align-items : flex-end;
     justify-content : left;
-	border: 1px solid crimson;
+}
+
+button{
+	padding: 3px 20px;
+	width: 100px;
+	background-color: #008CBA;
+	border: 3px solid cadetblue;
+	color: white;
+	border-radius: 8px 0 8px 0;
+}
+
+.Button{
+	height: 40px;
 }
 
 div#HeaderImg input{
@@ -24,6 +44,7 @@ div#HeaderImg input{
 .Text-Title{
 	font-size: 30px;
 	font-weight: 500;
+	align-self: start;
 }
 
 .Image{
@@ -33,4 +54,7 @@ div#HeaderImg input{
 
 .Text{
 	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
 }
