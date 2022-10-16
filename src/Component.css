@@ -20,8 +20,8 @@ html{
 }
  
 .HeaderImg{
-	min-height: 250px;
-	border-radius: 10px 10px 0 0;
+	min-height: 2.5rem;
+	border-radius: 1rem 1rem 0 0;
 	background-image: url("./nasa.jpg");
 	display : flex;
 	flex-direction: row;
@@ -30,30 +30,31 @@ html{
 }
 
 button{
-	padding: 3px 20px;
-	width: 100px;
+	padding: 0.3rem 2rem;
+	width: 10rem;
+	font-size: 1rem ;
 	font-weight: bold;
 	background-color: #fae3bb;
-	border: 3px solid #c98474;
-	box-shadow: 0 3px 15px #c98474;
+	border: 0.3rem solid #c98474;
+	box-shadow: 0 0.3rem 1.5rem #c98474;
 	color: #c98474;
-	border-radius: 8px 0 8px 0;
+	border-radius: 0.8rem 0 0.8rem 0;
 }
 
 button:hover{
-	padding: 3px 20px;
-	width: 100px;
+	padding: 0.3rem 2rem;
+	width: 10rem;
 	font-weight: bold;
 	background-color: #03b7c1;
-	border: 3px solid #037398;
-	box-shadow: 0 3px 15px #037398;
+	border: 0.3rem solid #037398;
+	box-shadow: 0 0.3rem 1.5rem #037398;
 	color: #036383;
-	border-radius: 8px 0 8px 0;
+	border-radius: 0.8rem 0 0.8rem 0;
 	transform: scale(1.07) ;
 }
 
 .Button{
-	height: 40px;
+	height: 4rem;
 }
 
 div.HeaderImg > img{
@@ -63,19 +64,20 @@ div.HeaderImg > img{
 }
 
 .Text-Title{
-	font-size: 30px;
+	font-size: 2rem;
 	font-weight: 500;
 	align-self: start;
 }
 
 
 .Image{
-	padding-left: 20px;
+	padding-left: 2rem;
 }
 
 .Text{
-	padding: 30px;
+	padding: 3rem;
 	display: flex;
+	font-size: 1rem;
 	flex-direction: column;
 	align-items: flex-end;
 	align-self: start;
@@ -83,7 +85,7 @@ div.HeaderImg > img{
 
 .Footer{
 	text-justify: auto;
-	font-size: 14px;
+	font-size: 0.9rem;
 	font-weight: 400;
 }
 
@@ -102,3 +104,9 @@ div.HeaderImg > img{
 		font-size: 75%;
 	}
 }
+
+@media screen and (max-width: 500px){
+	.Card{
+		margin: 1.5rem;
+	}
+	}
