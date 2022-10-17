@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/RedNucleus_Girish/static/css/main.32b155be.css",
-    "main.js": "/RedNucleus_Girish/static/js/main.f534e64f.js",
+    "main.css": "/RedNucleus_Girish/static/css/main.953d89ee.css",
+    "main.js": "/RedNucleus_Girish/static/js/main.e32d6bfe.js",
     "static/js/787.c1112931.chunk.js": "/RedNucleus_Girish/static/js/787.c1112931.chunk.js",
     "static/media/nasa.jpg": "/RedNucleus_Girish/static/media/nasa.0ba5dccb0e433b7278d7.jpg",
     "index.html": "/RedNucleus_Girish/index.html",
-    "main.32b155be.css.map": "/RedNucleus_Girish/static/css/main.32b155be.css.map",
-    "main.f534e64f.js.map": "/RedNucleus_Girish/static/js/main.f534e64f.js.map",
+    "main.953d89ee.css.map": "/RedNucleus_Girish/static/css/main.953d89ee.css.map",
+    "main.e32d6bfe.js.map": "/RedNucleus_Girish/static/js/main.e32d6bfe.js.map",
     "787.c1112931.chunk.js.map": "/RedNucleus_Girish/static/js/787.c1112931.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.32b155be.css",
-    "static/js/main.f534e64f.js"
+    "static/css/main.953d89ee.css",
+    "static/js/main.e32d6bfe.js"
   ]
 }
