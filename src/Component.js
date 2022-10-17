@@ -3,14 +3,18 @@ import "./Component.css";
 import { useEffect, useState } from "react";
 
 function Component() {
+
+	//useState hook to access the follow status
 	const [follow, setFollow] = useState(false);
 
+	// function used to change the color of hashtags
 	const changeText = () => {
 		let str = document.getElementById("paraContent").innerHTML;
 		let res = str.replace(/(\#\w+)/g, '<span class="blue">$1</span>');
 		document.getElementById("paraContent").innerHTML = res;
 	};
 
+	// called the function for changing color of hashtags
 	useEffect(() => {
 		changeText();
 	}, []);
@@ -34,7 +38,7 @@ function Component() {
 				<div className="textContent">
 					<p id="paraContent">
 						Translating Ideas to Reality - #React, #JAVASCRIPT,
-						#CSS, and #UXDesign
+						#CSS and #UXDesign
 					</p>
 					<div className="footer">
 						<p>

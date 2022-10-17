@@ -3,39 +3,38 @@ html {
 	font-size: 100%;
 }
 
-/* Whole card as a component css properties */
+/* Whole card as a component - css properties. flex-direction : column makes all sub-elements appear in column */
 .card {
 	margin: auto;
-	margin-top: 5%;
-	width: fit-content;
+	margin-top: 7%;
+	width: 40%;
 	display: flex;
 	flex-direction: column;
 	box-shadow: 0 0 2rem 0.5rem;
 	border-radius: 1rem;
 }
 
-/* Properties of Div for header image. flex-direction row makes the headerImg and text divs flex in rows(one on top of another */
+/* Properties of Div for header image.*/
 .headerImg {
-	min-height: 250px;
+	min-height: 16rem;
 	border-radius: 1rem 1rem 0 0;
 	background-image: url("./nasa.jpg");
+	background-repeat: no-repeat;
 	display: flex;
-	flex-direction: row;
 	align-items: flex-end;
-	justify-content: left;
 }
 
 /* properties for follow button */
 button {
-	padding: 0.3rem 2rem;
+	padding: 0.3rem 2rem; 
 	width: 10rem;
 	font-size: 1rem;
 	font-weight: bold;
 	border-radius: 0.8rem 0 0.8rem 0;
 }
 
-/* properties of button when hovered */
-button:hover {
+/* properties of button tags when hovered */
+button:active {
 	padding: 0.3rem 2rem;
 	width: 10rem;
 	font-weight: bold;
@@ -44,7 +43,7 @@ button:hover {
 	box-shadow: 0 0.3rem 1.5rem #037398;
 	color: #036383;
 	border-radius: 0.8rem 0 0.8rem 0;
-	transform: scale(1.07);
+	transform: scale(0.93);
 }
 
 /* properties of button when in unfollowed state */
@@ -82,9 +81,9 @@ div.headerImg > img {
 	align-self: start;
 }
 
-/* properties of image div. Padding kept 2 to keep the DP slighly away from left border */
+/* properties of image div. margin kept 2 to keep the DP slighly away from left border */
 .image {
-	padding-left: 2rem;
+	margin-left: 2rem;
 }
 
 /* properties of text div. align-items kept flex-end to keep the follow button on the right side */
@@ -112,16 +111,23 @@ div.headerImg > img {
 	html {
 		font-size: 85%;
 	}
+	.card {
+		width:fit-content;
+	}
 }
 
 @media (max-width: 768px) {
 	html {
 		font-size: 75%;
 	}
+	.card {
+		width:fit-content;
+	}
 }
 
 @media screen and (max-width: 500px) {
-	.Card {
+	.card {
 		margin: 1.5rem;
+		width:fit-content;
 	}
 }
