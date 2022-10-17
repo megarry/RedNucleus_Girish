@@ -15,7 +15,7 @@
 - The button colors for Follow and Unfollow states are different.
 - Used <b>useEffect</b> and <b>useState</b> hooks in the assignment.
 - Created a function for keeping the font color of <b>Hashtags</b> blue.
-	Here I have used regex to find the words that start with '#' and replaced them with a div which has blue font color. 
+	Here I have used regex to find the words that start with '#' and replaced them with a span which has blue font color. 
 - I have used child selector to design the Profile / Display Picture.
 
 
